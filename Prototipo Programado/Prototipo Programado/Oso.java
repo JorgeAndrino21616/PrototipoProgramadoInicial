@@ -15,7 +15,14 @@ public class Oso extends Actor
     public void act()
     {
         // Add your action code here.
-        
+        if (Greenfoot.isKeyDown("Left"))
+        {
+            move(-3);
+        }
+        if (Greenfoot.isKeyDown("Right"))
+        {
+            move(3);
+        }
 
     }
 }
