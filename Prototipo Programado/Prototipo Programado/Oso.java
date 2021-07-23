@@ -35,6 +35,17 @@ public class Oso extends Actor
             setRotation(90);
             move(3);
         }
+        
+        Actor Cereza;
+        Cereza = getOneObjectAtOffset (0, 0, Cereza.class);
+        if (Cereza != null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(Cereza);
+        }
+            
+        }
 
     }
-}
+
