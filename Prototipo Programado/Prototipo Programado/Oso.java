@@ -17,10 +17,22 @@ public class Oso extends Actor
         // Add your action code here.
         if (Greenfoot.isKeyDown("Left"))
         {
-            move(-3);
+            setRotation(180);
+            move(3);
         }
         if (Greenfoot.isKeyDown("Right"))
         {
+            setRotation(0);
+            move(3);
+        }
+        if (Greenfoot.isKeyDown("Up"))
+        {
+            setRotation(270);
+            move(3);
+        }
+        if (Greenfoot.isKeyDown("Down"))
+        {
+            setRotation(90);
             move(3);
         }
 
