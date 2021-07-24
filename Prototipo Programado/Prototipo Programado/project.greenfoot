@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.Cereza.image=cherries.png
+class.MyWorld.image=sand2.jpg
 class.Naranja.image=orange.png
 class.Oso.image=wombat.png
 dependency1.from=MyWorld
