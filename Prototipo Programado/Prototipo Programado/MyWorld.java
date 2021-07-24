@@ -20,5 +20,6 @@ public class MyWorld extends World
         addObject (new Oso(), 300, 200);
         addObject (new Cereza(), 100, 100);
         addObject (new Naranja(), 300, 300);
+        addObject (new obstaculo(), 400, 250);
     }
 }
