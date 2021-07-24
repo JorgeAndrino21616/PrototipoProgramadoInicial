@@ -44,7 +44,15 @@ public class Oso extends Actor
             world = getWorld();
             world.removeObject(Cereza);
         }
-            
+        
+        Actor Naranja;
+        Naranja = getOneObjectAtOffset (0, 0, Naranja.class);
+        if (Naranja != null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(Naranja);
+        }
         }
 
     }
