@@ -42,6 +42,9 @@ public class Oso extends Actor
         {
             World world;
             world = getWorld();
+            MyWorld mundo = (MyWorld)world;
+            Counter counter = mundo.getCounter();
+            counter.addScore();
             world.removeObject(Cereza);
         }
         
@@ -51,6 +54,9 @@ public class Oso extends Actor
         {
             World world;
             world = getWorld();
+            MyWorld mundo = (MyWorld)world;
+            Counter counter = mundo.getCounter();
+            counter.addScore();
             world.removeObject(Naranja);
         }
         }

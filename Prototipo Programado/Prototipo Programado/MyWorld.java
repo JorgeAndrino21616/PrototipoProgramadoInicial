@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    Counter counter= new Counter();
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -17,6 +17,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        addObject(counter, 100, 40);
         addObject (new Oso(), 300, 200);
         Cereza[] cerezas = new Cereza[7];
         for(int i=0; i<cerezas.length; i++)
@@ -42,5 +43,10 @@ public class MyWorld extends World
             int obstaculoY = Greenfoot.getRandomNumber(getHeight());
             addObject(obstaculos[i], obstaculoX, obstaculoY);
         }
+    }
+    
+    public Counter getCounter()
+    {
+       return counter;
     }
 }
