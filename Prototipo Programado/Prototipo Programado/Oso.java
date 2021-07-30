@@ -14,7 +14,7 @@ public class Oso extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        // movimiento para el oso
         if (Greenfoot.isKeyDown("Left"))
         {
             setRotation(180);
@@ -36,6 +36,7 @@ public class Oso extends Actor
             move(3);
         }
         
+        //acción que pasa cuando el oso toca una cereza
         Actor Cereza;
         Cereza = getOneObjectAtOffset (0, 0, Cereza.class);
         if (Cereza != null)
@@ -48,6 +49,7 @@ public class Oso extends Actor
             world.removeObject(Cereza);
         }
         
+        //acción que sucede cuando el oso toca una naranja
         Actor Naranja;
         Naranja = getOneObjectAtOffset (0, 0, Naranja.class);
         if (Naranja != null)

@@ -17,10 +17,14 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        //crear puntaje para el juego
         addObject(counter, 100, 40);
+        
+        //crear objetos
         addObject (new Oso(), 300, 200);
         Cereza[] cerezas = new Cereza[7];
         for(int i=0; i<cerezas.length; i++)
+        // crear un número determinado de cerezas, pero en posiciones aleatorias
         {
             cerezas[i]= new Cereza();
             int cerezaX = Greenfoot.getRandomNumber(getWidth());
@@ -29,6 +33,7 @@ public class MyWorld extends World
         }
         Naranja[] naranjas = new Naranja[7];
         for(int i=0; i<naranjas.length; i++)
+        //crear un número determinado de naranjas, pero en posiciones aleatorias
         {
             naranjas[i]= new Naranja();
             int naranjaX = Greenfoot.getRandomNumber(getWidth());
@@ -37,6 +42,7 @@ public class MyWorld extends World
         }
         obstaculo[] obstaculos = new obstaculo[6];
         for(int i=0; i<obstaculos.length; i++)
+        //crear un número de obstacúlos en posiociones aleatorias
         {
             obstaculos[i]= new obstaculo();
             int obstaculoX = Greenfoot.getRandomNumber(getWidth());
@@ -45,6 +51,7 @@ public class MyWorld extends World
         }
     }
     
+    //crear el puntaje
     public Counter getCounter()
     {
        return counter;

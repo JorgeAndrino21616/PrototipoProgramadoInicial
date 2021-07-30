@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Counter extends Actor
 {
+    //definir el puntaje inicial
     int score = 0;
     /**
      * Act - do whatever the Counter wants to do. This method is called whenever
@@ -15,10 +16,11 @@ public class Counter extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        // crear el puntaje
         setImage(new GreenfootImage("Puntaje:" + score, 24, Color.BLACK, Color.WHITE));
     }
     
+    //el puntaje aumenta con cada acción
     public void addScore()
     {
         score++;

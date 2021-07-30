@@ -14,7 +14,7 @@ public class obstaculo extends objects
      */
     public void act()
     {
-        // Add your action code here.
+        // acción que sucede cuando el oso toca un barril
           Actor Oso;
         Oso = getOneObjectAtOffset (0, 0, Oso.class);
         if (Oso != null)
